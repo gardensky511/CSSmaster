@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6d848fe9-8f9e-48ca-b2cb-231719691916" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1eTg8qqLHbiMjgdb2GMIRMrKmbJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bestHorrorScenes/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d848fe9-8f9e-48ca-b2cb-231719691916" name="Default Changelist" comment="" />
+      <created>1594350840324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594350840324</updated>
+      <workItem from="1594350846121" duration="569000" />
+      <workItem from="1594351679629" duration="4444000" />
+      <workItem from="1594452885339" duration="2688000" />
+      <workItem from="1594541918947" duration="8227000" />
+      <workItem from="1594565897448" duration="114000" />
+      <workItem from="1594605702680" duration="109000" />
+      <workItem from="1594605837335" duration="142000" />
+      <workItem from="1594716650587" duration="1509000" />
+      <workItem from="1594802204489" duration="5438000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="774" y="313" key="#File_Watchers" timestamp="1594605916493">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="774" y="313" key="#File_Watchers/0.23.1440.821@0.23.1440.821" timestamp="1594605916493" />
+    <state x="818" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594351717720">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="818" y="187" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.821@0.23.1440.821" timestamp="1594351717720" />
+    <state x="553" y="93" width="713" height="675" key="EditFileWatcherDialog" timestamp="1594605804825">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="553" y="93" width="713" height="675" key="EditFileWatcherDialog/0.23.1440.821@0.23.1440.821" timestamp="1594605804825" />
+    <state x="518" y="72" key="SettingsEditor" timestamp="1594605970248">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="518" y="72" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1594605970248" />
+    <state x="810" y="172" width="540" height="540" key="StructurePopup" timestamp="1594453270916">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="810" y="172" width="540" height="540" key="StructurePopup/0.23.1440.821@0.23.1440.821" timestamp="1594453270916" />
+    <state x="745" y="168" width="670" height="676" key="search.everywhere.popup" timestamp="1594547102558">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="745" y="168" width="670" height="676" key="search.everywhere.popup/0.23.1440.821@0.23.1440.821" timestamp="1594547102558" />
+  </component>
+</project>

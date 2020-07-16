@@ -1,0 +1,93 @@
+@import "../reset.css";
+body * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  justify-content: space-between;
+}
+.header h1, .header h2, .header p {
+  color: #e7473c;
+}
+.header h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.header h2 {
+  width: 70%;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.header p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  width: 80%;
+}
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.header nav ul li {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13.5px;
+  margin: 0 20px 10px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid;
+}
+.header nav ul li:hover {
+  color: black;
+}
+
+.main {
+  background-color: #e7473c;
+  padding-left: 40%;
+  color: #f0f0f0;
+}
+.main .movie {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent, transparent, transparent, #e7473c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.main .movie .movie__header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.main .movie .movie__header h4 {
+  font-size: 22px;
+}
+.main .movie .movie__header h5 {
+  font-size: 13px;
+}
+.main .movie img {
+  width: 80%;
+  cursor: pointer;
+  box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
