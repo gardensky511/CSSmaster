@@ -3,6 +3,7 @@
 
 // ======== variables ========
 $textBlack: #414141;
+$textLightGrey: #9d9d9c;
 $beige: #f3ede8;
 
 // ======== mixin ========
@@ -32,12 +33,16 @@ $beige: #f3ede8;
 
 // ======== style ========
 body {
-  padding: 70px 140px 0 140px;
+  padding-top: 75px;
   font-family: 'Montserrat', 'Cormorant',sans-serif;
+  & > *:not(.footer) {
+    padding: 0 140px;
+  }
+  * {
+    box-sizing: border-box;
+  }
 }
-body * {
-  box-sizing: border-box;
-}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -56,6 +61,7 @@ img {
   background-color: #fff;
   display: flex;
   align-items: center;
+  z-index: 2;
   nav {
     display: flex;
     justify-content: space-between;
@@ -63,6 +69,10 @@ img {
     width: 100%;
     svg {
       width: 36px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     ul {
       display: flex;
@@ -78,7 +88,6 @@ img {
 
 .banner {
   height: 100vh;
-  width: 100%;
   background-image: url("./src/banner.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,6 +97,7 @@ img {
   justify-content: center;
   align-items: center;
   color: #fff;
+  margin: 0 140px;
   @include sectionMarginBottom;
   h4 {
     color: #fff;
@@ -219,13 +229,42 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  @include sectionMarginBottom;
   .gallery__poster {
     max-width: 100%;
     height: 100%;
-    border: 1px solid;
+    display: flex;
     transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
+    }
+  }
+}
+
+.footer {
+  background-color: $beige;
+  color: $textBlack;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 65px 140px;
+  @include smallTitle;
+  .footer__column {
+    &:not(:first-child) {
+      border-left: 1px solid;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: $textLightGrey;
+      margin-bottom: 25px;
+    }
+    ul {
+      text-align: center;
+      li:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
