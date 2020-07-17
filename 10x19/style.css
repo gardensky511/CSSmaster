@@ -1,0 +1,62 @@
+@import "../reset.css";
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #af7832;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.3fr 2fr 1.3fr;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  gap: 1px;
+}
+body > div, body span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 18px;
+  color: #af7832;
+  text-transform: uppercase;
+}
+body .menu {
+  grid-column-start: -2;
+}
+body .center-image {
+  grid-column: 2/-2;
+  grid-row: 2/-2;
+  background-image: url("./src/Pervorse_4-600x600.jpg");
+  background-position: center;
+  background-size: cover;
+}
+body .number__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  background-color: #af7832;
+  gap: 1px;
+}
+body .number__row .number {
+  background-color: #fff;
+  color: #af7832;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s linear;
+}
+body .number__row .number:hover {
+  background-color: #af7832;
+  color: #fff;
+}
+body .scrolling__text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
