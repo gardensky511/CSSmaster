@@ -13,7 +13,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1.3fr 2fr 1.3fr;
-  grid-template-rows: 0.5fr 5fr 0.5fr;
+  grid-template-rows: 0.6fr 5fr 0.6fr;
   gap: 1px;
 }
 body > div, body span {
@@ -24,6 +24,10 @@ body > div, body span {
   font-size: 18px;
   color: #af7832;
   text-transform: uppercase;
+}
+body .svg--logo {
+  width: 70px;
+  height: 30px;
 }
 body .menu {
   grid-column-start: -2;
@@ -57,6 +61,21 @@ body .number__row .number:hover {
 body .scrolling__text {
   white-space: nowrap;
   overflow: hidden;
+}
+body .scrolling__text span {
+  animation: scrollText 8s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

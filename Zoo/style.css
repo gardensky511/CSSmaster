@@ -1,0 +1,71 @@
+@import "../reset.css";
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  height: 48px;
+}
+.header nav {
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.header nav ul {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header nav ul > li:not(:first-child) {
+  margin-right: 50px;
+}
+.header nav ul > li:first-child {
+  margin-right: 80px;
+}
+.header nav .header__left {
+  padding: 10px;
+}
+.header nav .header__left li:not(:first-child) {
+  color: #d9dadb;
+}
+.header nav .header__left:hover {
+  background-color: #d9dadb;
+}
+.header nav .header__left:hover li:not(:first-child) {
+  color: #fff;
+}
+.header nav .header__right {
+  padding: 10px;
+}
+.header nav .header__right:hover {
+  background-color: #d9dadb;
+}
+
+.main {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main a h3 {
+  font-size: 14px;
+  padding: 10px;
+}
+.main a img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
