@@ -30,10 +30,10 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.header nav ul > li:not(:first-child) {
+.header nav ul > li {
   margin-right: 50px;
 }
-.header nav ul > li:first-child {
+.header nav ul:first-child > li:first-child {
   margin-right: 80px;
 }
 .header nav .header__left {

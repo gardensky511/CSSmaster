@@ -37,10 +37,10 @@ body {
       display: flex;
       align-items: center;
       cursor: pointer;
-      & > li:not(:first-child) {
+      & > li {
         margin-right: 50px;
       }
-      & > li:first-child {
+      &:first-child > li:first-child {
         margin-right: 80px;
       }
     }
