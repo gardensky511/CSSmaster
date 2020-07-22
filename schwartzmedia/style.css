@@ -1,0 +1,70 @@
+@import "../reset.css";
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  grid-column-start: 2;
+}
+
+.hero {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .hero__photo {
+  height: 65vh;
+  width: 70%;
+  background-image: url("./src/banner.jpg");
+  background-position: center;
+}
+.hero h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.hero p {
+  font-size: 32px;
+}
+.hero p span {
+  font-size: 24px;
+  margin-right: 70px;
+}
+
+.products .product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+  border-top: 1px solid #dadada;
+}
+.products .product div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products .product div .product__category {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.products .product div .product__description {
+  font-size: 32px;
+}
+.products .product img {
+  width: 100%;
+  padding-left: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

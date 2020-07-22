@@ -1,0 +1,86 @@
+// ### css reset
+@import "../reset.css";
+
+// ### variables
+$color_lightGrey: #dadada;
+
+// ### mixin
+@mixin description {
+  font-size: 32px;
+}
+@mixin sectionBorderTop {
+  border-top: 1px solid $color_lightGrey;
+}
+
+
+// ### style
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  line-height: 1.5;
+}
+a { text-decoration: none }
+
+.button {
+
+}
+
+main {
+  grid-column-start: 2;
+}
+
+.hero {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .hero__photo {
+    height: 65vh;
+    width: 70%;
+    background-image: url("./src/banner.jpg");
+    background-position: center;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  p {
+    span {
+      font-size: 24px;
+      margin-right: 70px;
+    }
+    @include description;
+  }
+}
+
+.products {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+    @include sectionBorderTop;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .product__category {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+      .product__description {
+        @include description;
+      }
+    }
+    img {
+      width: 100%;
+      padding-left: 32px;
+    }
+  }
+}
