@@ -2,8 +2,6 @@
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 7fr 1fr;
   line-height: 1.5;
 }
 
@@ -11,8 +9,23 @@ a {
   text-decoration: none;
 }
 
+.button {
+  color: #000;
+  padding: 10px 40px;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  margin-right: 8px;
+  transition: background-color 0.2s linear;
+}
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 main {
   grid-column-start: 2;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .hero {
@@ -43,28 +56,96 @@ main {
   margin-right: 70px;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+}
 .products .product {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px 0;
+  column-gap: 30px;
+  grid-column-start: span 2;
   border-top: 1px solid #dadada;
 }
-.products .product div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.products .product:nth-child(2) div, .products .product:nth-child(4) div {
+  order: 1;
 }
 .products .product div .product__category {
   font-size: 24px;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 .products .product div .product__description {
   font-size: 32px;
 }
+.products .product p {
+  margin: 50px 0;
+}
 .products .product img {
   width: 100%;
-  padding-left: 32px;
+}
+.products .line {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  border-top: 1px solid #dadada;
+}
+.products .line .product {
+  grid-template-columns: 1fr;
+  grid-column-start: span 1;
+  border: none;
+}
+.products .line .product img {
+  margin-top: 10px;
+}
+.products .line .product p {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+  border-top: 1px solid #dadada;
+  margin-bottom: 80px;
+}
+.links .links__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.links .links__description {
+  font-size: 22px;
+  margin: 30px 0;
+}
+
+.footerWrapper {
+  background-color: rgba(33, 32, 32, 0.83);
+  color: #fff;
+}
+.footerWrapper .footer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footerWrapper .footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.footerWrapper .footer__top .nav {
+  display: flex;
+}
+.footerWrapper .footer__top .nav a {
+  color: #fff;
+  margin-left: 80px;
+}
+.footerWrapper .footer__bottom a {
+  color: #fff;
+}
+.footerWrapper .footer__bottom p:first-child {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
