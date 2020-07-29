@@ -1,0 +1,78 @@
+// ### import
+@import "../reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:wght@400;700&display=swap');
+
+// ### variables
+
+
+// ### mixin
+
+
+// ### style
+* {
+  box-sizing: border-box;
+}
+body {
+  //margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  border: 5px solid;
+
+  & > * {
+    border: 3px solid green;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10%;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  nav {
+    ul {
+      display: flex;
+      li:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  h1 {
+    justify-self: center;
+  }
+  span {
+    justify-self: end;
+  }
+  .logo {
+    font-family: 'Noto Serif';
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    div {
+      transform: rotateZ(-15deg);
+      margin-right: 1px;
+      margin-left: -1px;
+    }
+  }
+}
+
+.hero {
+  border: 3px solid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+  .hero__img {
+    background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
