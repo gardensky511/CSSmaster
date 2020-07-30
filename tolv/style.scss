@@ -3,31 +3,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:wght@400;700&display=swap');
 
 // ### variables
-
+$color_orange: #ff6429;
+$color_yellow: #efcb56;
 
 // ### mixin
+@mixin serif {
+  font-family: 'Noto Serif';
+}
 
+@mixin title {
+  @include serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2;
+}
 
 // ### style
 * {
   box-sizing: border-box;
 }
+
 body {
   //margin-top: 60px;
   font-family: 'Montserrat', sans-serif;
-
+  margin-top: 60px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+
+span {
+  font-size: 12px;
+
+  a {
+    color: $color_orange;
+    font-weight: 600;
+  }
 }
 
 .header {
-  border: 5px solid;
-
-  & > * {
-    border: 3px solid green;
-  }
   position: fixed;
   top: 0;
   left: 0;
@@ -37,25 +48,31 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+
   nav {
     ul {
       display: flex;
+
       li:not(:last-child) {
         margin-right: 20px;
       }
     }
   }
+
   h1 {
     justify-self: center;
   }
+
   span {
     justify-self: end;
   }
+
   .logo {
-    font-family: 'Noto Serif';
+    @include serif;
     font-size: 28px;
     font-weight: 500;
     display: flex;
+
     div {
       transform: rotateZ(-15deg);
       margin-right: 1px;
@@ -65,14 +82,75 @@ a {
 }
 
 .hero {
-  border: 3px solid;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100vh;
+  grid-template-rows: calc(100vh - 60px);
+
   .hero__img {
     background-image: url("https://source.unsplash.com/random");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      width: 70%;
+      text-align: center;
+      margin-bottom: 30px;
+      @include title;
+    }
+  }
+}
+
+.banner {
+  background-color: $color_yellow;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .banner__title {
+    @include title;
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include serif;
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 40vh;
+  background-position: center center;
+  background-size: cover;
+
+  .gallery__item {
+    background-image: url("https://source.unsplash.com/featured/?furniture,furniture");
+    cursor: pointer;
+
+    &:first-child,
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(10){
+      grid-column-start: span 2;
+    }
+    transition: all .2s linear;
+    &:hover {
+      filter: blur(50px);
+    }
   }
 }
