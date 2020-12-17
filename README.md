@@ -8,5 +8,3 @@
  - [x] https://rodicdavidson.co.uk/
  - [x] https://beige.de/
  - [x] http://donicaida.com/
- - [ ] https://canalstreet.market/
- - [ ] https://wonhundred.com/
